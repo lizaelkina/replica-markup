@@ -1,0 +1,11 @@
+.root::-webkit-scrollbar {
+  width: 5px;
+}
+.root::-webkit-scrollbar-track {
+  background: transparent;
+}
+.root::-webkit-scrollbar-thumb {
+  background: blue;
+  border: 3px solid blue;
+  border-radius: 5px;
+}
