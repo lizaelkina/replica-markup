@@ -1,0 +1,15 @@
+.page {
+  min-width: 320px;
+  font-family: $font;
+  color: $text-black;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+@media screen and (max-width: 510px){
+  .page {
+    gap: 50px;
+  }
+}
+
