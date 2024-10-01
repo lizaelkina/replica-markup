@@ -1,15 +1,35 @@
 .page {
   min-width: 320px;
   font-family: $font;
+  background-color: $main-background;
   color: $text-black;
   display: flex;
   flex-direction: column;
   gap: 70px;
-}
 
-@media screen and (max-width: 510px){
-  .page {
-    gap: 50px;
+  &__container {
+    max-width: 1110px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 
+@media screen and (max-width: 650px){
+  .page {
+    gap: 50px;
+
+    &__container {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+  }
+}
+
+@media screen and (max-width: 447px){
+  .page__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

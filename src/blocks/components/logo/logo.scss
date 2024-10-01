@@ -1,0 +1,10 @@
+.logo {
+  width: 143px;
+  height: 35px;
+  outline-color: $active;
+  cursor: pointer;
+
+  &__img {
+    background-color: transparent;
+  }
+}

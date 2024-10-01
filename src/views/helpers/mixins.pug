@@ -1,0 +1,15 @@
+mixin img(src, alt)
+  img(src=src alt=alt loading='lazy')&attributes(attributes)
+
+mixin svg(name)
+  svg(data-svg=name)&attributes(attributes)
+    use(xlink:href=`./img/sprites/sprite.svg#${name}`)
+
+mixin svg-link(name, href, label)
+  a(href=href aria-label=label).svg
+    svg(data-svg=name).svg__icon
+      use(xlink:href=`./img/sprites/sprite.svg#${name}`)
+
+mixin nav(title, href)
+  li.nav
+    a.nav__item(href=href)= title

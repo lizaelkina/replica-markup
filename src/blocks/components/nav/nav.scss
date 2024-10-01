@@ -1,0 +1,21 @@
+.nav {
+
+  &__item {
+    @include section-tab;
+    color: $text-black;
+    outline-color: $active;
+    transition: color .5s ease, background-color .5s ease;
+
+    &:active {
+      color: $active;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+
+    &:focus {
+      background-color: $focus;
+    }
+  }
+}

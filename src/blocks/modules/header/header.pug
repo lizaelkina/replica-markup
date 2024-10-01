@@ -1,0 +1,14 @@
+header.header
+  nav.header__container.page__container
+    include ../../components/logo/logo
+    ul.header__links
+      +nav('Репродукции', '#catalog')
+      +nav('Новинки', '#promo')
+      +nav('О нас', '#team')
+      li
+        +svg-link('shopping-cart', '#', 'Корзина')
+
+  div.header__burger.page__container
+    button.button.button_icon(type='button' aria-label='Открыть меню' aria-expanded='false')
+      +svg('burger').button_icon_svg
+    +svg-link('shopping-cart', '#', 'Корзина')
