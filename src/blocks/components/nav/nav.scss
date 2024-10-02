@@ -2,20 +2,20 @@
 
   &__item {
     @include section-tab;
-    color: $text-black;
-    outline-color: $active;
+    color: $text-main;
+    outline-color: $base-active;
     transition: color .5s ease, background-color .5s ease;
 
     &:active {
-      color: $active;
+      color: $base-active;
     }
 
     &:hover {
-      color: $hover;
+      color: $base;
     }
 
     &:focus {
-      background-color: $focus;
+      background-color: $base-light;
     }
   }
 }

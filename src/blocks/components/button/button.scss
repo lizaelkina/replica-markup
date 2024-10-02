@@ -7,28 +7,28 @@
   justify-content: center;
   @include section-tab;
   text-decoration: none;
-  outline-color: $active;
+  outline-color: $base-active;
   transition: color .5s ease, background-color .5s ease;
   cursor: pointer;
 
   &_primary {
-    color: $text-green;
+    color: $text-accent;
     background-color: transparent;
-    border: 1px solid $text-green;
+    border: 1px solid $text-accent;
 
     &:active {
-      color: $text-white;
-      background-color: $active;
-      border: 1px solid $active;
+      color: $text-primary;
+      background-color: $base-active;
+      border: 1px solid $base-active;
     }
 
     &:hover {
-      color: $text-white;
-      background-color: $hover;
+      color: $text-primary;
+      background-color: $base;
     }
 
     &:focus {
-      background-color: $focus;
+      background-color: $base-light;
     }
   }
 
@@ -36,28 +36,28 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    fill: $text-black;
+    fill: $text-main;
     background-color: transparent;
     border: none;
     transition: fill .5s ease, background-color .5s ease;
 
     &:active {
-      fill: $active;
+      fill: $base-active;
     }
 
     &:hover {
-      fill: $hover;
+      fill: $base;
     }
 
     &:focus {
-      fill: $active;
-      background-color: $focus;
+      fill: $base-active;
+      background-color: $base-light;
     }
+  }
 
-    &_svg {
-      width: 100%;
-      aspect-ratio: 1;
-    }
+  &__svg {
+    width: 100%;
+    aspect-ratio: 1;
   }
 }
 

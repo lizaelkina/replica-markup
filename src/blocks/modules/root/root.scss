@@ -2,11 +2,11 @@
   width: 10px;
 }
 .root::-webkit-scrollbar-track {
-  background: $focus;
+  background: $base-light;
 }
 .root::-webkit-scrollbar-thumb {
-  background: $active;
-  border: 3px solid $focus;
+  background: $base-active;
+  border: 3px solid $base-light;
   border-radius: 5px;
 }
 

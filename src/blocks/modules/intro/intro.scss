@@ -21,16 +21,16 @@
     font-weight: 500;
     font-size: clamp(30px, 5vw, 60px);
     line-height: 110%;
-    color: $text-black;
+    color: $text-main;
 
     &_accent {
-      color: $text-green;
+      color: $text-accent;
     }
   }
 
   &__text {
     @include section-text;
-    color: $text-grey;
+    color: $text-secondary;
   }
 
   &__button {

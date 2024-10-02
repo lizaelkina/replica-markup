@@ -1,23 +1,23 @@
 // fonts
 $font: 'Raleway-Medium', Arial, Helvetica, sans-serif;
 
-// colors
-$main-background: #fff;
-$background: #e1ede6;
-$border: #c3d1c6;
+// background colors
+$background-main: #fff;
+$background-section: #e1ede6;
+$border-section: #c3d1c6;
 
 // grayscale colors
-$text-black: #2c2d35;
-$text-white: #f4f6f5;
-$text-grey: #86928B;
-$text-green: #598d66;
+$text-main: #2c2d35;
+$text-primary: #f4f6f5;
+$text-secondary: #86928b;
+$text-accent: #598d66;
 
 // accent colors
-$active: #376b44;
-$hover: #598d66;
-$focus: #d4e8d9;
+$base: #598d66;
+$base-active: #376b44;
+$base-light: #d4e8d9;
 
 $promo: #eedb6d;
 $promo-active: #d9b949;
-$promo-hover: #faeb97;
-$promo-stroke: #a38314;
+$promo-light: #faeb97;
+$promo-dark: #a38314;

@@ -2,26 +2,26 @@
   display: block;
   width: 24px;
   height: 24px;
-  outline-color: $active;
+  outline-color: $base-active;
   transition: background-color .5s ease;
 
   &__icon {
     width: 24px;
     height: 24px;
-    fill: $text-black;
+    fill: $text-main;
     transition: fill .5s ease;
   }
 }
 
 .svg:active .svg__icon {
-  fill: $active;
+  fill: $base-active;
 }
 
 .svg:hover .svg__icon {
-  fill: $hover;
+  fill: $base;
 }
 
 .svg:focus .svg__icon {
-  background-color: $focus;
-  fill: $active;
+  background-color: $base-light;
+  fill: $base-active;
 }

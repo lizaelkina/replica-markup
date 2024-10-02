@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: $background;
+  background-color: $background-section;
 
   &__container {
     padding-top: 33px;
@@ -19,7 +19,7 @@
     display: none;
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: $background;
+    background-color: $background-section;
     align-items: center;
     justify-content: space-between;
   }
@@ -41,7 +41,7 @@
   .header__links {
     margin-top: 16px;
     padding-top: 16px;
-    border-top: 1px solid $border;
+    border-top: 1px solid $border-section;
     justify-content: space-between;
     align-self: stretch;
   }
