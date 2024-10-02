@@ -1,0 +1,86 @@
+.intro {
+  display: grid;
+  grid-template-columns: fit-content(50%) fit-content(50%);
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+
+  &__image {
+    aspect-ratio: 27 / 31;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(30px, 5vw, 60px);
+    line-height: 110%;
+    color: $text-black;
+
+    &_accent {
+      color: $text-green;
+    }
+  }
+
+  &__text {
+    @include section-text;
+    color: $text-grey;
+  }
+
+  &__button {
+    margin-top: 40px;
+    max-width: 227px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding-top: 50px;
+
+    &__title {
+      line-height: 100%;
+    }
+
+    &__button {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    grid-template-columns: fit-content(40%) fit-content(60%);
+
+    &__container {
+      gap: 10px;
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .intro {
+    grid-template-columns: fit-content(100%);
+
+    &__image {
+      display: none;
+    }
+
+    &__container {
+      gap: 20px;
+    }
+
+    &__button {
+      margin-top: 20px;
+    }
+  }
+}

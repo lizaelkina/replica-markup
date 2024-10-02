@@ -1,19 +1,44 @@
 .button {
+  width: 100%;
   box-sizing: border-box;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
+  @include section-tab;
   text-decoration: none;
   outline-color: $active;
+  transition: color .5s ease, background-color .5s ease;
   cursor: pointer;
+
+  &_primary {
+    color: $text-green;
+    background-color: transparent;
+    border: 1px solid $text-green;
+
+    &:active {
+      color: $text-white;
+      background-color: $active;
+      border: 1px solid $active;
+    }
+
+    &:hover {
+      color: $text-white;
+      background-color: $hover;
+    }
+
+    &:focus {
+      background-color: $focus;
+    }
+  }
 
   &_icon {
     width: 30px;
     height: 30px;
     padding: 0;
-    border: none;
     fill: $text-black;
+    background-color: transparent;
+    border: none;
     transition: fill .5s ease, background-color .5s ease;
 
     &:active {
@@ -33,5 +58,11 @@
       width: 100%;
       aspect-ratio: 1;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button_primary {
+    padding: 14px;
   }
 }

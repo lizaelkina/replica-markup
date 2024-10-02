@@ -3,9 +3,6 @@
   font-family: $font;
   background-color: $main-background;
   color: $text-black;
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
 
   &__container {
     max-width: 1110px;
@@ -17,13 +14,9 @@
 }
 
 @media screen and (max-width: 650px){
-  .page {
-    gap: 50px;
-
-    &__container {
-      padding-left: 33px;
-      padding-right: 33px;
-    }
+  .page__container {
+    padding-left: 33px;
+    padding-right: 33px;
   }
 }
 

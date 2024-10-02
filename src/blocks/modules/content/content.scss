@@ -1,3 +1,12 @@
 .content {
   min-height: calc(100vh - 168px);
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+@media screen and (max-width: 650px){
+  .content {
+    gap: 50px;
+  }
 }

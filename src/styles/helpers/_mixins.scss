@@ -3,15 +3,20 @@
   font-family: $font;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: clamp(18px, 5vw, 40px);
   line-height: 110%;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 @mixin section-text {
   font-family: $font;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: clamp(14px, 3vw, 18px);
   line-height: 150%;
 }
 
@@ -19,11 +24,6 @@
   font-family: $font;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: clamp(18px, 3vw, 20px);
   line-height: 23px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-    line-height: 21px;
-  }
 }
