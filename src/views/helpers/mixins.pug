@@ -13,3 +13,7 @@ mixin svg-link(name, href, label)
 mixin nav(title, href)
   li.nav
     a.nav__item(href=href)= title
+
+mixin tab(title)
+  li&attributes(attributes)
+    button.button.button_tab(type='button')= title

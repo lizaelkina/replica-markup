@@ -3,13 +3,8 @@
   font-family: $font;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(18px, 5vw, 40px);
+  font-size: clamp(24px, 4vw, 40px);
   line-height: 110%;
-
-  @media screen and (max-width: 768px) {
-    font-size: 18px;
-    line-height: 21px;
-  }
 }
 
 @mixin section-text {

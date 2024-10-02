@@ -32,6 +32,30 @@
     }
   }
 
+  &_tab {
+    padding: 10px 20px;
+    color: $text-main;
+    background-color: $base-light;
+    border: 1px solid $base-light;
+    border-radius: 20px;
+
+    &:active {
+      color: $text-primary;
+      background-color: $base-active;
+      border: 1px solid $base-active;
+    }
+
+    &:hover {
+      color: $text-primary;
+      background-color: $base;
+      border: 1px solid $base;
+    }
+
+    &:focus {
+      border: 1px solid $base;
+    }
+  }
+
   &_icon {
     width: 30px;
     height: 30px;
@@ -62,7 +86,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .button_primary {
-    padding: 14px;
+  .button {
+    font-size: 18px;
+
+    &_primary {
+      padding: 14px;
+    }
   }
 }
