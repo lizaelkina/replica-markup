@@ -24,6 +24,20 @@
     justify-content: space-between;
     gap: 30px;
   }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .catalog__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 @media screen and (max-width: 752px) {
@@ -38,9 +52,15 @@
   }
 }
 
-@media screen and (max-width: 464px) {
+@media screen and (max-width: 550px) {
   .catalog__tabs {
     gap: 20px;
     overflow-x: scroll;
+  }
+
+  .catalog__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
