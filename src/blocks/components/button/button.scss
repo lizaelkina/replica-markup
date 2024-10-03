@@ -43,6 +43,12 @@
     border: 1px solid $base-light;
     border-radius: 20px;
 
+    &_active {
+      color: $text-primary;
+      background-color: $base-active;
+      border: 1px solid $base-active;
+    }
+
     &:active {
       color: $text-primary;
       background-color: $base-active;

@@ -26,15 +26,18 @@
   }
 
   &__cards {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+
+    &_active {
+      display: grid;
+    }
   }
 }
 
 @media screen and (max-width: 840px) {
   .catalog__cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
@@ -59,8 +62,6 @@
   }
 
   .catalog__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    grid-template-columns: 1fr;
   }
 }

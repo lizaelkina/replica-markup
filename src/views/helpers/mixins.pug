@@ -14,7 +14,7 @@ mixin nav(title, href)
   a.nav__item(href=href)= title
 
 mixin tab(title)
-  button.button.button_tab(type='button')= title
+  button.button.button_tab(type='button')&attributes(attributes)= title
 
 mixin card(src, author, title, material, price)
   article.card
