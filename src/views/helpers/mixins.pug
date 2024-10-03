@@ -18,7 +18,7 @@ mixin tab(title)
 
 mixin card(src, author, title, material, price)
   article.card
-    +img(src=src alt=title).card__image
+    +img(src=src alt=title loading='lazy').card__image
     div.card__info
       p.card__author= author
       h3.card__title= title

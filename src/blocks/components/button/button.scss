@@ -49,6 +49,11 @@
       border: 1px solid $base-active;
     }
 
+    &.button_tab_active:focus {
+      color: $text-main;
+      background-color: $base-light;
+    }
+
     &:active {
       color: $text-primary;
       background-color: $base-active;
