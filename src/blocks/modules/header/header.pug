@@ -2,10 +2,13 @@ header.header
   nav.header__container.page__container
     include ../../components/logo/logo
     ul.header__links
-      +nav('Репродукции', '#catalog')
-      +nav('Новинки', '#promo')
-      +nav('О нас', '#team')
-      li
+      li.nav
+        +nav('Репродукции', '#catalog')
+      li.nav
+        +nav('Новинки', '#promo')
+      li.nav
+        +nav('О нас', '#team')
+      li.nav
         +svg-link('shopping-cart', '#', 'Корзина')
 
   div.header__burger.page__container

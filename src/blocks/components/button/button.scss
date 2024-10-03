@@ -5,7 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include section-tab;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
   text-decoration: none;
   outline-color: $base-active;
   transition: color .5s ease, background-color .5s ease;
@@ -88,6 +92,7 @@
 @media screen and (max-width: 768px) {
   .button {
     font-size: 18px;
+    line-height: 21px;
 
     &_primary {
       padding: 14px;
