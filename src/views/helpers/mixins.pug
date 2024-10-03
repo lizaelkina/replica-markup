@@ -15,3 +15,12 @@ mixin nav(title, href)
 
 mixin tab(title)
   button.button.button_tab(type='button')= title
+
+mixin card(src, author, title, material, price)
+  article.card
+    +img(src=src, alt=title).card__image
+    p.card__author= author
+    h3.card__title= title
+    p.card__material= material
+    p.card__price= price
+    button.button.button_primary.card__button(type='button') В корзину

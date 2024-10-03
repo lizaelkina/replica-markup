@@ -1,0 +1,84 @@
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: $base-light;
+
+  &__image {
+    aspect-ratio: 310 / 422;
+  }
+
+  &__author {
+    margin-top: 10px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $text-secondary;
+  }
+
+  &__title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: $text-main;
+  }
+
+  &__material {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $text-main;
+  }
+
+  &__price {
+    margin-top: 20px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $text-accent;
+  }
+
+  &__button {
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .card__author {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .card__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .card__material {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .card__price {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .card__button {
+    margin-top: 0;
+  }
+}
