@@ -1,18 +1,15 @@
 .intro {
+  width: 100%;
   display: grid;
-  grid-template-columns: fit-content(50%) fit-content(50%);
-  grid-template-areas:
-      "image text";
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 30px;
 
   &__image {
-    grid-area: image;
     aspect-ratio: 27 / 31;
   }
 
   &__container {
-    grid-area: text;
     width: 100%;
     max-width: 540px;
     display: flex;
@@ -72,8 +69,7 @@
 
 @media screen and (max-width: 520px) {
   .intro {
-    grid-template-areas:
-      "text text";
+    grid-template-columns: 1fr;
 
     &__image {
       display: none;
