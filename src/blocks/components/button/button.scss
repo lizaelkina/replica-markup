@@ -11,7 +11,7 @@
   font-size: 20px;
   line-height: 23px;
   text-decoration: none;
-  outline-color: $base-active;
+  outline: none;
   transition: color .5s ease, background-color .5s ease;
   cursor: pointer;
 
@@ -97,6 +97,7 @@
   &__svg {
     width: 100%;
     aspect-ratio: 1;
+    outline: none;
   }
 }
 

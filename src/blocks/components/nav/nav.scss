@@ -3,7 +3,7 @@
   &__item {
     @include section-tab;
     color: $text-main;
-    outline-color: $base-active;
+    outline: none;
     transition: color .5s ease, background-color .5s ease;
 
     &:active {

@@ -1,9 +1,13 @@
 .logo {
   width: 143px;
   height: 35px;
-  outline-color: $base-active;
+  outline: none;
 
   &__img {
     background-color: transparent;
+  }
+
+  &:focus {
+    background-color: $base-light;
   }
 }

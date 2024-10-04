@@ -2,7 +2,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  outline-color: $base-active;
+  outline: none;
   transition: background-color .5s ease;
 
   &__icon {
