@@ -1,0 +1,129 @@
+.promo {
+  position: relative;
+  background-image: url(../../../img/promo_banner.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $base-active;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / .25);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    bottom: 0;
+    width: calc(100vw - 40%);
+    height: 100%;
+    background-color: $blur;
+    mix-blend-mode: multiply;
+    filter: blur(25px);
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__svg {
+    width: 80px;
+    aspect-ratio: 1;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 411px;
+    @include section-title;
+    line-height: 100%;
+    color: $text-primary;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 530px;
+    @include section-text;
+    color: $text-primary;
+  }
+
+  &__button {
+    margin-top: 40px;
+    max-width: 257px;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .promo:before {
+    width: calc(100vw - 20%);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .promo:before {
+    left: 0;
+    width: 100%;
+    filter: blur(0);
+  }
+
+  .promo__heading {
+    margin-bottom: 10px;
+  }
+
+  .promo__svg {
+    width: 60px;
+  }
+
+  .promo__title {
+    max-width: 340px;
+  }
+
+  .promo__text {
+    max-width: fit-content;
+  }
+
+  .promo__button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .promo__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .promo__heading {
+    margin-bottom: 0;
+  }
+
+  .promo__svg {
+    width: 50px;
+  }
+
+  .promo__text {
+    line-height: 140%;
+  }
+
+
+  .promo__button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .promo__button {
+    align-self: center;
+    margin-top: 10px;
+  }
+}

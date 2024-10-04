@@ -11,6 +11,7 @@
   font-size: 20px;
   line-height: 23px;
   text-decoration: none;
+  border: 1px solid transparent;
   outline: none;
   transition: color .5s ease, background-color .5s ease;
   cursor: pointer;
@@ -18,12 +19,12 @@
   &_primary {
     color: $text-accent;
     background-color: transparent;
-    border: 1px solid $text-accent;
+    border-color: $text-accent;
 
     &:active {
       color: $text-primary;
       background-color: $base-active;
-      border: 1px solid $base-active;
+      border-color: transparent;
     }
 
     &:hover {
@@ -33,6 +34,23 @@
 
     &:focus {
       background-color: $base-light;
+    }
+  }
+
+  &_promo {
+    color: $text-main;
+    background-color: $promo;
+
+    &:active {
+      background-color: $promo-active;
+    }
+
+    &:hover {
+      background-color: $promo-light;
+    }
+
+    &:focus {
+      border-color: $promo-dark;
     }
   }
 
