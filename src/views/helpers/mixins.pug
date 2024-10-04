@@ -1,6 +1,9 @@
 mixin img(src, alt)
   img(src=src alt=alt loading='lazy')&attributes(attributes)
 
+mixin source(srcset)
+  source(srcset=srcset type='image/webp')&attributes(attributes)
+
 mixin svg(name)
   svg(data-svg=name)&attributes(attributes)
     use(xlink:href=`./img/sprites/sprite.svg#${name}`)
@@ -16,9 +19,11 @@ mixin nav(title, href)
 mixin tab(title)
   button.button.button_tab(type='button')&attributes(attributes)= title
 
-mixin card(src, author, title, material, price)
+mixin card(src, srcset, author, title, material, price)
   article.card
-    +img(src=src alt=title loading='lazy').card__image
+    picture
+      source(srcset=srcset type='image/webp')
+      img(src=src alt=title loading='lazy').card__image
     div.card__info
       p.card__author= author
       h3.card__title= title
