@@ -1,10 +1,10 @@
 mixin img(src, alt)
   img(src=src alt=alt loading='lazy')&attributes(attributes)
 
-mixin picture(src, alt, ext)
+mixin picture(src, alt)
   picture
     source(srcset=src + '.webp' type='image/webp')
-    img(src=src + ext alt=alt loading='lazy')&attributes(attributes)
+    img(src=src + '.jpg' alt=alt loading='lazy')&attributes(attributes)
 
 mixin picture-size(src, alt, ext)
   picture

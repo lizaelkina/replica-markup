@@ -1,0 +1,18 @@
+mixin foto-item(src, alt)
+  li
+    +picture(src, alt).team__item
+
+section#team.team.page__container
+  +picture-png('./img/team/team', 'Рука художника с кисточками').team__image
+  div.team__container
+    h2.team__title Наша команда
+    p.team__text
+      | Значимость этих проблем настолько очевидна, что базовый вектор
+      | развития позволяет оценить значение экспериментов, поражающих
+      | по&nbsp;своей масштабности и&nbsp;грандиозности.
+      | Мы&nbsp;вынуждены отталкиваться от&nbsp;того,
+      | что консультация с&nbsp;широким активом.
+    ul.team__list
+      +foto-item('./img/team/team_foto1', 'Фото художника')
+      +foto-item('./img/team/team_foto2', 'Фото художника')
+      +foto-item('./img/team/team_foto3', 'Фото художника')
