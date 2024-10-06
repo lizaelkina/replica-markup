@@ -10,6 +10,12 @@
     justify-content: space-between;
   }
 
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
   &__links {
     display: flex;
     gap: 60px;
@@ -26,6 +32,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .header__nav {
+    gap: 40px;
+  }
+
   .header__links {
     gap: 40px;
   }
@@ -38,20 +48,25 @@
     flex-direction: column;
   }
 
-  .header__links {
+  .header__nav {
     margin-top: 16px;
     padding-top: 16px;
     border-top: 1px solid $blur-light;
-    justify-content: space-between;
+    gap: 0;
     align-self: stretch;
+  }
+
+  .header__cart {
+    flex-grow: 1;
+    align-self: end;
   }
 }
 
-@media screen and (max-width: 447px) {
+@media screen and (max-width: 480px) {
   .header {
     background-color: transparent;
 
-    &__links {
+    &__nav {
       display: none;
     }
 

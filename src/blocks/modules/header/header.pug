@@ -1,15 +1,15 @@
-header.header
-  nav.header__container.page__container.page__container_type_header
+header.header.page__container_type_header
+  div.header__container.page__container
     include ../../components/logo/logo
-    ul.header__links
-      li.nav
-        +nav('Репродукции', '#catalog')
-      li.nav
-        +nav('Новинки', '#promo')
-      li.nav
-        +nav('О нас', '#team')
-      li.nav
-        +svg-link('shopping-cart', '#', 'Корзина')
+    nav.header__nav
+      ul.header__links
+        li.nav
+          +nav('Репродукции', '#catalog')
+        li.nav
+          +nav('Новинки', '#promo')
+        li.nav
+          +nav('О нас', '#team')
+      +svg-link('shopping-cart', '#', 'Корзина')
 
   div.header__burger.page__container
     button.button.button_icon(type='button' aria-label='Открыть меню' aria-expanded='false')
