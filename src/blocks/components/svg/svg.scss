@@ -5,23 +5,23 @@
   outline: none;
   transition: background-color .5s ease;
 
+  &:active .svg__icon {
+    fill: $base-active;
+  }
+
+  &:hover .svg__icon {
+    fill: $base;
+  }
+
+  &:focus .svg__icon {
+    background-color: $base-light;
+    fill: $base-active;
+  }
+
   &__icon {
     width: 24px;
     height: 24px;
     fill: $text-main;
     transition: fill .5s ease;
   }
-}
-
-.svg:active .svg__icon {
-  fill: $base-active;
-}
-
-.svg:hover .svg__icon {
-  fill: $base;
-}
-
-.svg:focus .svg__icon {
-  background-color: $base-light;
-  fill: $base-active;
 }

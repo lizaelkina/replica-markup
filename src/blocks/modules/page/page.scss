@@ -10,18 +10,32 @@
     box-sizing: border-box;
     padding-left: 39px;
     padding-right: 39px;
+
+    &_type_footer {
+      margin-top: 70px;
+    }
   }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 768px) {
+  .page__container_type_footer {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 720px) {
   .page__container {
     max-width: 1176px;
     padding-left: 33px;
     padding-right: 33px;
+
+    &_type_header {
+      margin-bottom: 50px;
+    }
   }
 }
 
-@media screen and (max-width: 447px){
+@media screen and (max-width: 447px) {
   .page__container {
     max-width: 1140px;
     padding-left: 15px;

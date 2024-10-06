@@ -52,24 +52,17 @@
   }
 }
 
-@media screen and (max-width: 720px) {
-  .intro {
-    padding-top: 50px;
-    align-items: start;
-  }
-}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .intro {
     column-gap: 0;
-  }
 
-  .intro__container {
-    gap: 10px;
-  }
+    &__container {
+      gap: 10px;
+    }
 
-  .intro__button {
-    margin-top: 0;
+    &__button {
+      margin-top: 0;
+    }
   }
 }
 
