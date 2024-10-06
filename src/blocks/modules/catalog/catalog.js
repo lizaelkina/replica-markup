@@ -11,7 +11,7 @@ tabs.forEach(tab => {
     catalogs.forEach(catalog => {
       catalog.classList.remove('catalog__cards_active');
     });
-    const data = event.target.getAttribute('data');
-    page.querySelector('.catalog__' + data).classList.add('catalog__cards_active');
+    const tab = event.target.getAttribute('data-tab');
+    page.querySelector('.catalog__' + tab).classList.add('catalog__cards_active');
   });
 });
