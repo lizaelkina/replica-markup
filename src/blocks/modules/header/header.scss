@@ -66,6 +66,10 @@
   .header {
     background-color: transparent;
 
+    &__container {
+      margin-bottom: 0;
+    }
+
     &__nav {
       display: none;
     }

@@ -1,5 +1,5 @@
-header.header.page__container_type_header
-  div.header__container.page__container
+header.header
+  div.header__container.page__container.page__container_type_header
     include ../../components/logo/logo
     nav.header__nav
       ul.header__links
@@ -11,7 +11,7 @@ header.header.page__container_type_header
           +nav('О нас', '#team')
       +svg-link('shopping-cart', '#', 'Корзина')
 
-  div.header__burger.page__container
+  div.header__burger.page__container.page__container_type_header
     button.button.button_icon(type='button' aria-label='Открыть меню' aria-expanded='false')
       +svg('burger').button__svg
     +svg-link('shopping-cart', '#', 'Корзина')

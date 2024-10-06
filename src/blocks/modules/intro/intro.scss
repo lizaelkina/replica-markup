@@ -25,10 +25,16 @@
     font-size: clamp(30px, 5vw, 60px);
     line-height: 110%;
     color: $text-main;
+  }
 
-    &_accent {
-      color: $text-accent;
-    }
+  &__accent {
+    width: 100%;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(30px, 5vw, 60px);
+    line-height: 110%;
+    color: $text-accent;
   }
 
   &__text {
