@@ -1,0 +1,144 @@
+.footer {
+  width: 100%;
+  background-color: $background-section;
+
+  &__container {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    display: grid;
+    grid-template-areas:
+    'logo . catalog news about . copyright'
+    'info . catalog news about . copyright';
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &_content_info {
+      gap: 8px;
+      grid-area: info;
+    }
+
+    &_content_catalog {
+      grid-area: catalog;
+    }
+
+    &_content_news {
+      grid-area: news;
+    }
+
+    &_content_about {
+      grid-area: about;
+    }
+
+    &_content_copyright {
+      gap: 10px;
+      grid-area: copyright;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: $text-main;
+  }
+
+  &__link {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: $text-secondary;
+
+    &_phone {
+      white-space: nowrap;
+      font-size: 20px;
+      line-height: 23px;
+      color: $text-main;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer__container {
+    grid-template-areas:
+    'logo logo logo info'
+    'catalog news about copyright';
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer__container {
+    grid-template-areas:
+    'logo logo info'
+    'catalog news about'
+    'copyright copyright copyright';
+  }
+
+  .footer__column_content_copyright {
+    grid-area: copyright;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid $blur-light;
+  }
+
+  .footer__copyright {
+    flex-direction: row;
+  }
+
+  .footer__link {
+    font-size: 16px;
+
+    &_phone {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'logo logo'
+    'info catalog'
+    'news about'
+    'copyright copyright';
+    justify-content: start;
+  }
+
+  .footer__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

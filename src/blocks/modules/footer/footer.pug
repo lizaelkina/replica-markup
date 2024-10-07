@@ -1,0 +1,46 @@
+footer.footer
+  div.footer__container.page__container.page__container_type_footer
+
+    +logo.footer__logo
+
+    div.footer__column.footer__column_content_info
+      p.footer__link.footer__link_phone +7 (999) 543-54-54
+      h3.footer__link Мастерская
+
+    div.footer__column.footer__column_content_catalog
+      h3.footer__title Репродукции
+      ul.footer__links
+        li.nav
+          +nav('Франция', '#').footer__link
+        li.nav
+          +nav('Германия', '#').footer__link
+        li.nav
+          +nav('Англия', '#').footer__link
+
+    div.footer__column.footer__column_content_news
+      h3.footer__title Новинки
+      ul.footer__links
+        li.nav
+          +nav('2024', '#').footer__link
+        li.nav
+          +nav('2023', '#').footer__link
+
+    div.footer__column.footer__column_content_about
+      h3.footer__title О нас
+      ul.footer__links
+        li.nav
+          +nav('Художники', '#').footer__link
+        li.nav
+          +nav('Менеджеры', '#').footer__link
+
+    div.footer__column.footer__column_content_copyright
+     ul.footer__icons
+       li
+        +svg-link('facebook', '#', 'Наш facebook')
+       li
+         +svg-link('youtube', '#', 'Наш instagram')
+       li
+         +svg-link('youtube', '#', 'Наш youtube')
+     div.footer__copyright
+       p.footer__link Ink. House &reg;
+       p.footer__link All rights reserved
