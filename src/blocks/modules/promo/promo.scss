@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  background-image: url(../../../img/promo/promo_banner.jpg);
+  @include background-image('../../../img/promo/promo_banner');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 550px) {
   .promo {
-    background-image: url(../../../img/promo/promo_banner-mobile.jpg);
+    @include background-image('../../../img/promo/promo_banner-mobile');
     background-position: top left;
   }
 

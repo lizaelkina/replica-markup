@@ -1,3 +1,9 @@
+//background-image
+@mixin background-image($src) {
+  background-image: url($src + '.jpg');
+  background-image: image-set(url($src + '.webp') type('image/webp'));
+}
+
 //fonts
 @mixin section-title {
   font-family: $font;
