@@ -1,10 +1,11 @@
 .team {
   width: 100%;
   display: grid;
-  grid-template-columns: fit-content(445px) fit-content(635px);
+  grid-template-columns: 44% fit-content(635px);
   column-gap: 30px;
 
   &__image {
+    max-width: 445px;
     aspect-ratio: 445 / 440;
     background-color: transparent;
   }
@@ -56,7 +57,7 @@
     gap: 30px;
 
     &__image {
-      max-width: 74%;
+      max-width: 60%;
     }
 
     &__container {
@@ -68,5 +69,9 @@
 @media screen and (max-width: 520px) {
   .team__image {
     max-width: 100%;
+  }
+
+  .team__list {
+    gap: 25px;
   }
 }
