@@ -1,0 +1,11 @@
+div.menu
+  nav.menu__container
+    button.button.button_icon.button__close-menu(type='button' aria-label='Закрыть меню' aria-expanded='true')
+      +svg('close').button__svg
+    ul.menu__list
+      li.nav
+        +nav('Репродукции', '#catalog').menu__link
+      li.nav
+        +nav('Новинки', '#promo').menu__link
+      li.nav
+        +nav('О нас', '#team').menu__link

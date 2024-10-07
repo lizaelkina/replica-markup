@@ -1,0 +1,30 @@
+.menu {
+  z-index: 1;
+  position: fixed;
+  top: 67px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $background-section;
+  transition: left .5s ease;
+
+  &_opened {
+    left: 0;
+  }
+
+  &__container {
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
