@@ -1,6 +1,10 @@
 mixin img(src, alt)
   img(src=src alt=alt loading='lazy')&attributes(attributes)
 
+mixin logo()
+  a.logo(href='./')&attributes(attributes)
+    +img('./img/logo/logo.svg', 'Логотип').logo__img
+
 mixin picture(src, alt, ext, noMobile)
   picture
     if !noMobile
@@ -24,7 +28,7 @@ mixin svg-link(name, href, label)
       use(xlink:href=`./img/sprites/sprite.svg#${name}`)
 
 mixin nav(title, href)
-  a.nav__item(href=href)= title
+  a.nav__item(href=href)&attributes(attributes)= title
 
 mixin tab(title)
   button.button.button_tab(type='button')&attributes(attributes)= title
