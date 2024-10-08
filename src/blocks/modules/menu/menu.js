@@ -1,5 +1,6 @@
 const body = document.querySelector('.root');
 const page = document.querySelector('.page');
+const clickForHeader = page.querySelector('.header__container');
 const menu = page.querySelector('.menu');
 const buttonOpenMenu = page.querySelector('.button__open-menu');
 const buttonCloseMenu = menu.querySelector('.button__close-menu');
@@ -33,3 +34,5 @@ anchorMenu.forEach(link => {
     closeMenu();
   });
 });
+
+clickForHeader.addEventListener('click', closeMenu);
