@@ -1,7 +1,7 @@
 mixin img(src, alt)
   img(src=src alt=alt loading='lazy')&attributes(attributes)
 
-mixin logo()
+mixin logo
   a.logo(href='./')&attributes(attributes)
     +img('./img/logo/logo.svg', 'Логотип').logo__img
 
