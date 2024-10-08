@@ -90,6 +90,13 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .card__title {
+    font-size: 22px;
+    line-height: 23px;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .card__image {
     aspect-ratio: 1;
