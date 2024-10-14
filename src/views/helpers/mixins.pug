@@ -35,7 +35,10 @@ mixin tab(title)
 
 mixin card(src, author, title, material, price)
   article.card
-    +picture-jpg(src, title).card__image
+    picture.card__overlay
+      source(srcset=src + '-mobile.webp' type='image/webp' media='(max-width: 520px)')
+      source(srcset=src + '.webp' type='image/webp')
+      img(src=src + '.jpg' alt=title loading='lazy').card__image
     div.card__info
       p.card__author= author
       h3.card__title= title

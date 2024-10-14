@@ -12,6 +12,33 @@
     aspect-ratio: 310 / 422;
   }
 
+  &__overlay {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: $background-section;
+      background-image: url(../img/svg/zoom.svg);
+      background-size: 24px 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity .5s ease;
+    }
+
+    &:hover::before {
+      opacity: .6;
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
