@@ -8,13 +8,13 @@ const anchorMenu = menu.querySelectorAll('.menu__link');
 
 function openMenu() {
   menu.classList.add('menu_opened');
-  body.classList.add('root__menu-open');
+  body.classList.add('root__popup-open');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 
 function closeMenu() {
   menu.classList.remove('menu_opened');
-  body.classList.remove('root__menu-open');
+  body.classList.remove('root__popup-open');
   document.removeEventListener('keydown', closeMenuByEsc);
 }
 
