@@ -5,7 +5,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $overlay;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,52 +18,30 @@
   }
 
   &__container {
-    width: fit-content;
-    max-width: 100vw;
-    max-height: 80vh;
-    background-color: $background-section;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay;
   }
 
   &__buttons {
     z-index: 2;
     position: absolute;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 6px;
     border-radius: 4px;
-    background-color: $background-section;
+    background-color: $overlay;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     &_top {
-      right: 16px;
-      top: 16px;
+      right: 10px;
+      top: 10px;
     }
 
     &_bottom {
-      right: 16px;
-      bottom: 16px;
-    }
-  }
-
-  &__rotate {
-    display: none;
-
-    .in-fullscreen & {
-      display: flex;
-    }
-  }
-
-  &__fullscreen {
-    display: flex;
-
-    .in-fullscreen & {
-      display: none;
-    }
-  }
-
-  &__fullscreen-exit {
-    display: none;
-
-    .in-fullscreen & {
-      display: flex;
+      right: 10px;
+      bottom: 10px;
     }
   }
 

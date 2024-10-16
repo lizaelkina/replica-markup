@@ -1,16 +1,24 @@
 const body = document.querySelector('.root');
 const page = document.querySelector('.page');
 const modal = page.querySelector('.modal');
-const buttonOpenModal = page.querySelectorAll('.card');
+const modalImage = page.querySelector('.modal__img');
+const buttonOpenModal = page.querySelectorAll('.card__overlay');
 const buttonCloseModal = modal.querySelector('.modal__close');
 
-function openModal() {
+function openModal(event) {
+  let img = event.target.querySelector('.card__image');
+  modalImage.src = img.getAttribute('data-big-src');
+  modalImage.alt = img.alt;
+
   modal.classList.add('modal_opened');
   body.classList.add('root__popup-open');
   document.addEventListener('keydown', closeModalByEsc);
 
   const container = document.getElementById('myPanzoom');
-  new Panzoom(container);
+  const options = {
+    click: 'toggleCover',
+  };
+  new Panzoom(container, options);
 }
 
 function closeModal() {
@@ -27,8 +35,8 @@ function closeModalByEsc(event) {
 }
 
 buttonOpenModal.forEach(image => {
-  image.addEventListener('click', () => {
-    openModal();
+  image.addEventListener('click', (event) => {
+    openModal(event);
   });
 });
 

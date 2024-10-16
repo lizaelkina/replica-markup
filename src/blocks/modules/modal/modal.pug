@@ -10,10 +10,5 @@ div.modal
         +svg('plus').button__svg
       button.button.button_icon(type='button' aria-label='Уменьшить изображение' data-panzoom-action='zoomOut')
         +svg('minus').button__svg
-      button.button.button_icon.modal__fullscreen(type='button' aria-label='Войти в полноэкранный режим' data-panzoom-action='toggleFS')
-        +svg('fullscreen').button__svg
-      button.button.button_icon.modal__fullscreen-exit(type='button' aria-label='Выйти из полноэкранного режима' data-panzoom-action='toggleFS')
-        +svg('fullscreen-exit').button__svg
 
-    +img('./img/catalog/france/f1-big.jpg', 'Заголовок').modal__img.f-panzoom__content
-    //+img('./img/catalog/germany/g2-big.jpg', 'Заголовок').modal__img.f-panzoom__content
+    +img('#', '#').modal__img.f-panzoom__content
