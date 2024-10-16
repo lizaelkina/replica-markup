@@ -11,7 +11,7 @@
   align-items: center;
   visibility: hidden;
   opacity: 0;
-  transition: visibility .5s, opacity .5s linear;
+  transition: visibility .3s, opacity .3s linear;
 
   &_opened {
     visibility: visible;
@@ -44,12 +44,28 @@
     }
   }
 
+  &__rotate {
+    display: none;
+
+    .in-fullscreen & {
+      display: flex;
+    }
+  }
+
   &__fullscreen {
     display: flex;
+
+    .in-fullscreen & {
+      display: none;
+    }
   }
 
   &__fullscreen-exit {
     display: none;
+
+    .in-fullscreen & {
+      display: flex;
+    }
   }
 
   &__img {
@@ -57,12 +73,4 @@
     object-fit: contain;
     background-color: transparent;
   }
-}
-
-.in-fullscreen .modal__fullscreen {
-  display: none;
-}
-
-.in-fullscreen .modal__fullscreen-exit {
-  display: flex;
 }

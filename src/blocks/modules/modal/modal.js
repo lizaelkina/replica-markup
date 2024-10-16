@@ -10,10 +10,7 @@ function openModal() {
   document.addEventListener('keydown', closeModalByEsc);
 
   const container = document.getElementById('myPanzoom');
-  const options = {
-    click: 'toggleCover' ,
-  };
-  new Panzoom(container, options);
+  new Panzoom(container);
 }
 
 function closeModal() {

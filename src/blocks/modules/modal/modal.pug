@@ -1,16 +1,18 @@
 div.modal
   div#myPanzoom.modal__container.f-panzoom
     div.modal__buttons.modal__buttons_top
-      button.button.button_icon.modal__close(type='button' aria-label='Закрыть изображение')
+      button.button.button_icon.modal__close(type='button' aria-label='Закрыть изображение' data-panzoom-action='reset')
         +svg('close').button__svg
     div.modal__buttons.modal__buttons_bottom
-      button.button.button_icon(type='button' aria-label='Увеличить' data-panzoom-action='zoomIn')
+      button.button.button_icon.modal__rotate(type='button' aria-label='Повернуть изображение' data-panzoom-change='{"angle": 90}')
+        +svg('rotate').button__svg
+      button.button.button_icon(type='button' aria-label='Увеличить изображение' data-panzoom-action='zoomIn')
         +svg('plus').button__svg
-      button.button.button_icon(type='button' aria-label='Уменьшить' data-panzoom-action='zoomOut')
+      button.button.button_icon(type='button' aria-label='Уменьшить изображение' data-panzoom-action='zoomOut')
         +svg('minus').button__svg
-      button.button.button_icon.modal__fullscreen(type='button' aria-label='Полноэкранный режим' data-panzoom-action='toggleFS')
+      button.button.button_icon.modal__fullscreen(type='button' aria-label='Войти в полноэкранный режим' data-panzoom-action='toggleFS')
         +svg('fullscreen').button__svg
-      button.button.button_icon.modal__fullscreen-exit(type='button' aria-label='Полноэкранный режим' data-panzoom-action='toggleFS')
+      button.button.button_icon.modal__fullscreen-exit(type='button' aria-label='Выйти из полноэкранного режима' data-panzoom-action='toggleFS')
         +svg('fullscreen-exit').button__svg
 
     +img('./img/catalog/france/f1-big.jpg', 'Заголовок').modal__img.f-panzoom__content
