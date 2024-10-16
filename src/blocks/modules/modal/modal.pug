@@ -1,5 +1,17 @@
 div.modal
   div#myPanzoom.modal__container.f-panzoom
-    button.button.button_primary(data-panzoom-action='zoomIn') Zoom In
-    button.button.button_primary(data-panzoom-action='zoomOut') Zoom Out
-    +img('./img/catalog/france/f1-big.jpg', 'Охота Амура').modal__img.f-panzoom__content
+    div.modal__buttons.modal__buttons_top
+      button.button.button_icon.modal__close(type='button' aria-label='Закрыть изображение')
+        +svg('close').button__svg
+    div.modal__buttons.modal__buttons_bottom
+      button.button.button_icon(type='button' aria-label='Увеличить' data-panzoom-action='zoomIn')
+        +svg('plus').button__svg
+      button.button.button_icon(type='button' aria-label='Уменьшить' data-panzoom-action='zoomOut')
+        +svg('minus').button__svg
+      button.button.button_icon.modal__fullscreen(type='button' aria-label='Полноэкранный режим' data-panzoom-action='toggleFS')
+        +svg('fullscreen').button__svg
+      button.button.button_icon.modal__fullscreen-exit(type='button' aria-label='Полноэкранный режим' data-panzoom-action='toggleFS')
+        +svg('fullscreen-exit').button__svg
+
+    +img('./img/catalog/france/f1-big.jpg', 'Заголовок').modal__img.f-panzoom__content
+    //+img('./img/catalog/germany/g2-big.jpg', 'Заголовок').modal__img.f-panzoom__content

@@ -2,6 +2,7 @@ const body = document.querySelector('.root');
 const page = document.querySelector('.page');
 const modal = page.querySelector('.modal');
 const buttonOpenModal = page.querySelectorAll('.card');
+const buttonCloseModal = modal.querySelector('.modal__close');
 
 function openModal() {
   modal.classList.add('modal_opened');
@@ -34,4 +35,10 @@ buttonOpenModal.forEach(image => {
   });
 });
 
+buttonCloseModal.addEventListener('click', closeModal);
 
+modal.addEventListener('mousedown', event => {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
