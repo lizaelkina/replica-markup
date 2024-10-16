@@ -23,7 +23,9 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.css">
     <link rel="stylesheet" href="styles/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/panzoom/panzoom.umd.js"></script>
   </head>
   <body class="root">
     <div class="page">
@@ -88,9 +90,9 @@
           <ul class="catalog__cards catalog__france catalog__cards_active">
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/france/f1-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/france/f1.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f1.jpg" alt="Охота Амура" loading="lazy"/>
+                  <source srcset="./img/catalog/france/f1.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f1.jpg" alt="Охота Амура" loading="lazy" data-big-src="./img/catalog/france/f1-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Марсель Руссо</p>
@@ -103,9 +105,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/france/f2-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/france/f2.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f2.jpg" alt="Дама с собачкой" loading="lazy"/>
+                  <source srcset="./img/catalog/france/f2.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f2.jpg" alt="Дама с собачкой" loading="lazy" data-big-src="./img/catalog/france/f2-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Анри Селин</p>
@@ -118,9 +120,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/france/f3-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/france/f3.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f3.jpg" alt="Процедура" loading="lazy"/>
+                  <source srcset="./img/catalog/france/f3.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f3.jpg" alt="Процедура" loading="lazy" data-big-src="./img/catalog/france/f3-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Франсуа Дюпон</p>
@@ -133,9 +135,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/france/f4-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/france/f4.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f4.jpg" alt="Роза" loading="lazy"/>
+                  <source srcset="./img/catalog/france/f4.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f4.jpg" alt="Роза" loading="lazy" data-big-src="./img/catalog/france/f4-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Луи Детуш</p>
@@ -148,9 +150,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/france/f5-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/france/f5.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f5.jpg" alt="Птичья трапеза" loading="lazy"/>
+                  <source srcset="./img/catalog/france/f5.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f5.jpg" alt="Птичья трапеза" loading="lazy" data-big-src="./img/catalog/france/f5-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Франсуа Дюпон</p>
@@ -163,9 +165,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/france/f6-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/france/f6.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f6.jpg" alt="Пейзаж с рыбой" loading="lazy"/>
+                  <source srcset="./img/catalog/france/f6.webp" type="image/webp"/><img class="card__image" src="./img/catalog/france/f6.jpg" alt="Пейзаж с рыбой" loading="lazy" data-big-src="./img/catalog/france/f6-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Пьер Моранж</p>
@@ -180,9 +182,9 @@
           <ul class="catalog__cards catalog__germany">
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/germany/g1-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/germany/g1.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g1.jpg" alt="Над городом" loading="lazy"/>
+                  <source srcset="./img/catalog/germany/g1.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g1.jpg" alt="Над городом" loading="lazy" data-big-src="./img/catalog/germany/g1-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Курт Вернер</p>
@@ -195,9 +197,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/germany/g2-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/germany/g2.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g2.jpg" alt="Птенцы" loading="lazy"/>
+                  <source srcset="./img/catalog/germany/g2.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g2.jpg" alt="Птенцы" loading="lazy" data-big-src="./img/catalog/germany/g2-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Макс Рихтер</p>
@@ -210,9 +212,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/germany/g3-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/germany/g3.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g3.jpg" alt="Среди листьев" loading="lazy"/>
+                  <source srcset="./img/catalog/germany/g3.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g3.jpg" alt="Среди листьев" loading="lazy" data-big-src="./img/catalog/germany/g3-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Мартин Майер</p>
@@ -225,9 +227,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/germany/g4-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/germany/g4.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g4.jpg" alt="Яркая птица" loading="lazy"/>
+                  <source srcset="./img/catalog/germany/g4.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g4.jpg" alt="Яркая птица" loading="lazy" data-big-src="./img/catalog/germany/g4-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Герман Беккер</p>
@@ -240,9 +242,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/germany/g5-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/germany/g5.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g5.jpg" alt="Дятлы" loading="lazy"/>
+                  <source srcset="./img/catalog/germany/g5.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g5.jpg" alt="Дятлы" loading="lazy" data-big-src="./img/catalog/germany/g5-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Вульф Бауэр</p>
@@ -255,9 +257,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/germany/g6-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/germany/g6.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g6.jpg" alt="Большие воды" loading="lazy"/>
+                  <source srcset="./img/catalog/germany/g6.webp" type="image/webp"/><img class="card__image" src="./img/catalog/germany/g6.jpg" alt="Большие воды" loading="lazy" data-big-src="./img/catalog/germany/g6-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Вальтер Хартманн</p>
@@ -272,9 +274,9 @@
           <ul class="catalog__cards catalog__england">
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/england/e1-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/england/e1.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e1.jpg" alt="Дикий зверь" loading="lazy"/>
+                  <source srcset="./img/catalog/england/e1.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e1.jpg" alt="Дикий зверь" loading="lazy" data-big-src="./img/catalog/england/e1-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Пол Смит</p>
@@ -287,9 +289,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/england/e2-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/england/e2.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e2.jpg" alt="Скалистый берег" loading="lazy"/>
+                  <source srcset="./img/catalog/england/e2.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e2.jpg" alt="Скалистый берег" loading="lazy" data-big-src="./img/catalog/england/e2-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Джон Уайт</p>
@@ -302,9 +304,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/england/e3-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/england/e3.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e3.jpg" alt="Река и горы" loading="lazy"/>
+                  <source srcset="./img/catalog/england/e3.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e3.jpg" alt="Река и горы" loading="lazy" data-big-src="./img/catalog/england/e3-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Джим Уотсон</p>
@@ -317,9 +319,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/england/e4-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/england/e4.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e4.jpg" alt="Белый попугай" loading="lazy"/>
+                  <source srcset="./img/catalog/england/e4.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e4.jpg" alt="Белый попугай" loading="lazy" data-big-src="./img/catalog/england/e4-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Юджин Зиллион</p>
@@ -332,9 +334,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/england/e5-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/england/e5.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e5.jpg" alt="Ночная рыба" loading="lazy"/>
+                  <source srcset="./img/catalog/england/e5.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e5.jpg" alt="Ночная рыба" loading="lazy" data-big-src="./img/catalog/england/e5-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Эрик Гиллман</p>
@@ -347,9 +349,9 @@
             </li>
             <li>
               <article class="card">
-                <picture>
+                <picture class="card__overlay">
                   <source srcset="./img/catalog/england/e6-mobile.webp" type="image/webp" media="(max-width: 520px)"/>
-                  <source srcset="./img/catalog/england/e6.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e6.jpg" alt="Рыжий кот" loading="lazy"/>
+                  <source srcset="./img/catalog/england/e6.webp" type="image/webp"/><img class="card__image" src="./img/catalog/england/e6.jpg" alt="Рыжий кот" loading="lazy" data-big-src="./img/catalog/england/e6-big.webp"/>
                 </picture>
                 <div class="card__info">
                   <p class="card__author">Альфред Барр</p>
@@ -493,6 +495,34 @@
             </li>
           </ul>
         </nav>
+      </div>
+      <div class="modal">
+        <div class="modal__container f-panzoom" id="myPanzoom">
+          <div class="modal__buttons modal__buttons_top">
+            <button class="button button_icon modal__close" type="button" aria-label="Закрыть изображение" data-panzoom-action="reset">
+              <svg class="button__svg" data-svg="close">
+                <use xlink:href="./img/sprites/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal__buttons modal__buttons_bottom">
+            <button class="button button_icon modal__rotate" type="button" aria-label="Повернуть изображение" data-panzoom-change="{&quot;angle&quot;: 90}">
+              <svg class="button__svg" data-svg="rotate">
+                <use xlink:href="./img/sprites/sprite.svg#rotate"></use>
+              </svg>
+            </button>
+            <button class="button button_icon" type="button" aria-label="Увеличить изображение" data-panzoom-action="zoomIn">
+              <svg class="button__svg" data-svg="plus">
+                <use xlink:href="./img/sprites/sprite.svg#plus"></use>
+              </svg>
+            </button>
+            <button class="button button_icon" type="button" aria-label="Уменьшить изображение" data-panzoom-action="zoomOut">
+              <svg class="button__svg" data-svg="minus">
+                <use xlink:href="./img/sprites/sprite.svg#minus"></use>
+              </svg>
+            </button>
+          </div><img class="modal__img f-panzoom__content" src="#" alt="#" loading="lazy"/>
+        </div>
       </div>
     </div>
   </body>
