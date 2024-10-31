@@ -2,16 +2,17 @@
   z-index: 1;
   position: fixed;
   top: 67px;
-  left: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: $background-section;
-  transition: left .5s ease;
+  transform: translateX(-100%);
+  transition: transform .5s ease;
 
   &_opened {
-    left: 0;
+    transform: translateX(0);
   }
 
   &__container {
